@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Pages\Converter.razor" />
+    <Content Remove="Pages\ShoppingList.razor" />
+    <Content Remove="Shared\Item.razor" />
+    <Content Remove="Shared\ShoppingListLayout.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\ShoppingList.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Converter.razor" />
+    <_ContentIncludedByDefault Remove="Pages\ShoppingList.razor" />
+    <_ContentIncludedByDefault Remove="Shared\Item.razor" />
+    <_ContentIncludedByDefault Remove="Shared\ShoppingListLayout.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\Grocery.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Converter.razor" />
+    <None Include="Pages\ShoppingList.razor" />
+    <None Include="Shared\Item.razor" />
+    <None Include="Shared\ShoppingListLayout.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Converter.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Shared\Item.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Shared\ShoppingListLayout.razor" />
+  </ItemGroup>
+
+</Project>
